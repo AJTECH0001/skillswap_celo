@@ -49,8 +49,8 @@ const Onboarding = ({ onboarded, setOnboarded }: Props) => {
     <>
       {!timePassed && <Splash />}
       {timePassed && (
-        <div>
-          <CardCarousel />
+        <div className="flex justify-center items-center h-screen">
+          <CardCarousel handleSubmit={handleSubmit} />
         </div>
       )}
     </>
