@@ -48,7 +48,7 @@ const CardCarousel: React.FC<Props> = ({handleShowWallet}: Props) => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 h-screen flex flex-col justify-center items-center">
       <Card card={cards[currentIndex]} />
       {/* Pagination */}
       <div className="flex justify-center -mt-10">

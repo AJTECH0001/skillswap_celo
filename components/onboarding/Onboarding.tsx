@@ -2,6 +2,7 @@ import React, { Dispatch, SetStateAction, useState } from "react";
 import Splash from "./Splash";
 import CardCarousel from "./CardCarousel";
 import WalletCard from "./WalletCard";
+import Profile from "./Profile";
 
 type Props = {
   onboarded: boolean;
@@ -11,6 +12,7 @@ type Props = {
 const Onboarding = ({ onboarded, setOnboarded }: Props) => {
   const [timePassed, setTimePassed] = useState(false);
   const [showWallet, setShowWallet] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
 
   setTimeout(function () {
     setTimePassed(true);
@@ -23,13 +25,20 @@ const Onboarding = ({ onboarded, setOnboarded }: Props) => {
   const handleShowWallet = () => {
     setShowWallet(true);
   };
+
+  const handleShowProfile = () => {
+    setShowProfile(true);
+  };
   return (
     <>
       {!timePassed && <Splash />}
       {timePassed && (
-        <div className="flex justify-center items-center h-screen bg-[#F5F5F5]">
+        <div className="h-auto bg-[#F5F5F5]">
           {!showWallet && <CardCarousel handleShowWallet={handleShowWallet} />}
-          {showWallet && <WalletCard handleSubmit={handleSubmit} />}
+          {showWallet && !showProfile && (
+            <WalletCard handleShowProfile={handleShowProfile} />
+          )}
+          {showProfile && <Profile />}
         </div>
       )}
     </>
