@@ -1,7 +1,7 @@
 import { FC, ReactNode, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import Onboarding from "./Onboarding";
+import Onboarding from "./onboarding/Onboarding";
 
 interface Props {
     children: ReactNode;
