@@ -1,6 +1,10 @@
 import React from "react";
 
-const Profile = () => {
+type Props = {
+  handleSubmit: () => void;
+};
+
+const Profile = ({handleSubmit}: Props) => {
   return (
     <div>
       <div className="pt-4">
@@ -79,7 +83,7 @@ const Profile = () => {
         </div>
 
         <div className="max-w-md mx-auto px-4 pt-6 pb-5">
-          <button className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">Save</button>
+          <button onClick={handleSubmit} className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">Save</button>
         </div>
       </div>
     </div>

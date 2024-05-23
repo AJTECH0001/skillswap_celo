@@ -6,10 +6,10 @@ import WalIcon4 from "../../public/icons/walicon4.svg";
 import Image from "next/image";
 
 type Props = {
-    handleShowProfile: () => void;
-  }
+  handleShowProfile: () => void;
+};
 
-const WalletCard = ({handleShowProfile}: Props) => {
+const WalletCard = ({ handleShowProfile }: Props) => {
   return (
     <div className="p-4 h-screen flex flex-col justify-center items-center">
       <div className="h-[277px] max-w-md mx-auto bg-white shadow-lg rounded-lg pt-6 flex flex-col justify-end">
@@ -27,19 +27,31 @@ const WalletCard = ({handleShowProfile}: Props) => {
             Select your preferred wallet to continue
           </p>
           <div className="flex justify-between mx-3 mt-4">
-            <div onClick={handleShowProfile} className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer">
+            <div
+              onClick={handleShowProfile}
+              className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer"
+            >
               <Image src={WalIcon1} alt="icon" />
             </div>
 
-            <div onClick={handleShowProfile} className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer">
+            <div
+              onClick={handleShowProfile}
+              className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer"
+            >
               <Image src={WalIcon2} alt="icon" />
             </div>
 
-            <div onClick={handleShowProfile} className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer">
+            <div
+              onClick={handleShowProfile}
+              className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer"
+            >
               <Image src={WalIcon3} alt="icon" />
             </div>
 
-            <div onClick={handleShowProfile} className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer">
+            <div
+              onClick={handleShowProfile}
+              className="w-[64px] h-[64px] border-[1.5px] border-[#6A93FF] rounded-[4px] bg-[#EDF4FF] flex justify-center items-center cursor-pointer"
+            >
               <Image src={WalIcon4} alt="icon" />
             </div>
           </div>

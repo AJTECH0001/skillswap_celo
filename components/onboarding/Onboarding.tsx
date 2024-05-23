@@ -38,7 +38,7 @@ const Onboarding = ({ onboarded, setOnboarded }: Props) => {
           {showWallet && !showProfile && (
             <WalletCard handleShowProfile={handleShowProfile} />
           )}
-          {showProfile && <Profile />}
+          {showProfile && <Profile handleSubmit={handleSubmit} />}
         </div>
       )}
     </>
