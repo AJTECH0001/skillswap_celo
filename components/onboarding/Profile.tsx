@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import ProfileImg from "../../assets/profileimg.svg"
 
 type Props = {
   handleSubmit: () => void;
@@ -6,7 +8,7 @@ type Props = {
 
 const Profile = ({handleSubmit}: Props) => {
   return (
-    <div>
+    <div className="bg-[#FFFFFF]">
       <div className="pt-4">
         <h1 className="text-[#666666] font-[500] text-base text-center pt-3">
           Setup Profile
@@ -16,7 +18,9 @@ const Profile = ({handleSubmit}: Props) => {
         </p>
 
         <div className="flex flex-col justify-center items-center pt-14">
-          <div className="w-[140px] h-[140px] bg-[#D9D9D9] font-[500]"></div>
+          <div className="w-[120px] h-[120px] bg-[#D9D9D9] font-[500]">
+            <Image src={ProfileImg} alt="Profile_img" />
+          </div>
           <a className="text-center text-sm text-[#6A93FF] underline font-[500] pt-3 cursor-pointer">
             Edit Photo
           </a>
@@ -68,9 +72,9 @@ const Profile = ({handleSubmit}: Props) => {
             <div className="mb-6">
               <label
                 className="block text-[#666666] text-sm font-[500] mb-2"
-                htmlFor="additional-info"
+                htmlFor="links"
               >
-                Additional info:
+                Links
               </label>
               <input
                 className="h-[44px] border-[1px] border-black rounded-[8px] w-full py-2 px-3 text-[#888888] leading-tight focus:outline-none focus:shadow-outline bg-transparent"
