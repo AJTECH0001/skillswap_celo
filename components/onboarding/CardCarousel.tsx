@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Card from "./Card";
+import CardIcon from "../../assets/cardicon.svg"
+import CardIcon1 from "../../assets/cardicon1.svg"
+import CardIcon2 from "../../assets/cardicon2.svg"
 
 interface CardData {
   id: number;
   title: string;
   description: string;
+  icon: string;
 }
 
 type Props = {
@@ -17,18 +21,21 @@ const cards: CardData[] = [
     title: "List Your Skills",
     description:
       "Create a profile and list the skills or services you offer. Browse skills offered by others.",
+    icon: CardIcon,
   },
   {
     id: 2,
     title: "Find a Job",
     description:
       "Search for jobs that match your skills and apply directly through our platform.",
+    icon: CardIcon1,
   },
   {
     id: 3,
     title: "Connect with Peers",
     description:
       "Join communities and connect with other professionals in your field.",
+    icon: CardIcon2,
   },
 ];
 
