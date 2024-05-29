@@ -1,12 +1,39 @@
 import Image from "next/image";
 import React from "react";
-import ProfileImg from "../../assets/profileimg.svg"
+import ProfileImg from "../../assets/profileimg.svg";
+import LinkIcon from "../../assets/linkicon.svg";
+import { PlusIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   handleSubmit: () => void;
 };
 
-const Profile = ({handleSubmit}: Props) => {
+interface ButtonData {
+  title: string;
+}
+
+const Profile = ({ handleSubmit }: Props) => {
+  const buttons: ButtonData[] = [
+    {
+      title: "Resume",
+    },
+    {
+      title: "Behance",
+    },
+    {
+      title: "LinkedIn",
+    },
+    {
+      title: "Github",
+    },
+    {
+      title: "Dribble",
+    },
+    {
+      title: "Medium",
+    },
+  ];
+
   return (
     <div className="bg-[#FFFFFF]">
       <div className="pt-4">
@@ -70,24 +97,49 @@ const Profile = ({handleSubmit}: Props) => {
               />
             </div>
             <div className="mb-6">
-              <label
-                className="block text-[#666666] text-sm font-[500] mb-2"
-                htmlFor="links"
-              >
-                Links
-              </label>
-              <input
-                className="h-[44px] border-[1px] border-black rounded-[8px] w-full py-2 px-3 text-[#888888] leading-tight focus:outline-none focus:shadow-outline bg-transparent"
-                id="additional-info"
-                type="text"
-                placeholder="start typing"
-              />
+              <div>
+                <label
+                  className="block text-[#666666] text-sm font-[500] mb-2"
+                  htmlFor="links"
+                >
+                  Links
+                </label>
+              </div>
+
+              <div className="flex space-x-2">
+                <input
+                  className="h-[44px] border-[1px] border-black rounded-[8px] w-full py-2 px-3 text-[#888888] leading-tight focus:outline-none focus:shadow-outline bg-transparent"
+                  id="links"
+                  type="text"
+                  placeholder="Resume"
+                />
+
+                <button className="h-[44px] border-[1px] border-black rounded-[8px] py-2 px-5 text-[#888888] leading-tight focus:outline-none focus:shadow-outline bg-transparent flex justify-center items-center">
+                  <Image src={LinkIcon} alt="link_icon" className="mr-2" /> Link
+                </button>
+              </div>
+            </div>
+
+            <div className="mb-4 grid grid-cols-3 gap-x-3 gap-y-5 w-auto">
+              {buttons.map((button) => (
+                <div className="border-[1px] border-gray-600 text-[#666666] bg-transparent hover:bg-[#6A93FF] hover:text-white rounded-[4px] py-2 px-4 flex justify-center items-center">
+                  <div className="">{button.title} </div>
+                  <div>
+                    <PlusIcon className="h-4 w-4 ml-2 font-extrabold" />
+                  </div>
+                </div>
+              ))}
             </div>
           </form>
         </div>
 
         <div className="max-w-md mx-auto px-4 pt-6 pb-5">
-          <button onClick={handleSubmit} className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">Save</button>
+          <button
+            onClick={handleSubmit}
+            className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]"
+          >
+            Save
+          </button>
         </div>
       </div>
     </div>
