@@ -11,9 +11,9 @@ const Layout: FC<Props> = ({ children }) => {
     return (
         <>
         {!onboarded && <Onboarding onboarded={onboarded} setOnboarded={setOnboarded} />}
-            {onboarded && <div className="bg-white">
+            {onboarded && <div className="bg-gypsum overflow-hidden flex flex-col min-h-screen">
                 <Header />
-                <div className="max-w-7xl mx-auto">
+                <div className="py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8">
                     {children}
                 </div>
                 <Footer />
