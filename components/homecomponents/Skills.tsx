@@ -63,6 +63,7 @@ const Skills = () => {
                   const star = index + 1;
                   return (
                     <StarIcon
+                      key={index}
                       className={`${
                         star <= Math.round(skill.ratings)
                           ? "text-[#6A93FF]"
