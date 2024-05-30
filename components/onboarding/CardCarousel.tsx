@@ -12,8 +12,8 @@ interface CardData {
 }
 
 type Props = {
-  handleShowWallet: () => void;
-}
+  handleShowProfile: () => void;
+};
 
 const cards: CardData[] = [
   {
@@ -39,7 +39,7 @@ const cards: CardData[] = [
   },
 ];
 
-const CardCarousel: React.FC<Props> = ({handleShowWallet}: Props) => {
+const CardCarousel: React.FC<Props> = ({ handleShowProfile }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // const handlePrevious = () => {
@@ -80,7 +80,7 @@ const CardCarousel: React.FC<Props> = ({handleShowWallet}: Props) => {
         )} */}
         <button
           className="bg-[#6A93FF] text-white w-[240px] h-[44px] px-4 py-2 rounded-[12px] ml-2"
-          onClick={currentIndex === cards.length - 1 ? handleShowWallet : handleNext}
+          onClick={currentIndex === cards.length - 1 ? handleShowProfile : handleNext}
         >
           {currentIndex === cards.length - 1 ? "Get Started" : "Next"}
         </button>
