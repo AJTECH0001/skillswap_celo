@@ -31,7 +31,7 @@ const Circles = () => {
     },
   ];
   return (
-    <div className="pt-11 mb-20">
+    <div className="pt-11 mb-28">
       <div className="flex justify-between">
         <p className="text-sm text-[#888888] font-semibold">Popular Cicles</p>
         <Link href="/cicles" className="text-sm text-[#6A93FF]">
