@@ -25,7 +25,7 @@ const Workshops = () => {
       <p className="text-sm text-[#888888] font-semibold">Workshops</p>
 
       {workshops.map((workshop, index) => (
-        <div className="rounded-[8px] pb-2 mt-4 bg-[#F8F8F8]">
+        <div key={index} className="rounded-[8px] pb-2 mt-4 bg-[#F8F8F8]">
           <div>
             <Image
               src={workshop.image}
