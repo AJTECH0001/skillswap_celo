@@ -124,7 +124,7 @@ const Profile = ({ handleSubmit }: Props) => {
               {buttons.map((button) => (
                 <div
                   key={button.title}
-                  className="border-[1px] border-gray-600 text-[#666666] bg-transparent hover:bg-[#6A93FF] hover:text-white rounded-[4px] py-2 px-4 flex justify-center items-center"
+                  className="border-[1px] text-sm border-gray-600 text-[#666666] bg-transparent hover:bg-[#6A93FF] hover:text-white rounded-[4px] py-2 px-4 flex justify-center items-center"
                 >
                   <div className="">{button.title} </div>
                   <div>
