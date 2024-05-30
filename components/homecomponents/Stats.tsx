@@ -27,8 +27,8 @@ const Stats = () => {
       <p className="text-sm mb-5">Quick Stats</p>
 
       <div className="flex justify-between">
-        {stats.map((stat) => (
-          <div className="flex items-center space-x-2">
+        {stats.map((stat, index) => (
+          <div key={index} className="flex items-center space-x-2">
             <div className="flex justify-center items-center w-[30px] h-[30px] bg-white/20 rounded-[4px] border-[1px] border-white">
               <span className="w-[25px] h-[25px] flex justify-center items-center">
                 <Image src={stat.icon} alt="icon_" />
