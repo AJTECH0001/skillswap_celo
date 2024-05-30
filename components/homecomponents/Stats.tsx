@@ -24,7 +24,7 @@ const Stats = () => {
   ];
   return (
     <div className="bg-[#6A93FF] text-[#EFEFEF] rounded-[6px] mt-4 px-3 py-5">
-      <p className="text-sm mb-5">Quick Stats</p>
+      <p className="text-xs mb-5">Quick Stats</p>
 
       <div className="flex justify-between">
         {stats.map((stat, index) => (
@@ -36,8 +36,8 @@ const Stats = () => {
             </div>
 
             <div>
-              <p className="text-xs">{stat.title}</p>
-              <p className="font-semibold text-sm">{stat.amount}</p>
+              <p className="text-[10px]">{stat.title}</p>
+              <p className="font-semibold text-xs">{stat.amount}</p>
             </div>
           </div>
         ))}
