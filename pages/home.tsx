@@ -8,7 +8,7 @@ import React from 'react'
 
 const home = () => {
   return (
-    <div>
+    <div className='px-3'>
         <div className='fixed bottom-0'><NavBar /></div>
         <Alert />
         <Stats />

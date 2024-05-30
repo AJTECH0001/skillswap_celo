@@ -1,8 +1,17 @@
-import React from 'react'
+import Image from 'next/image'
+import NotificationIcon from "../../assets/notification.svg"
+import ProfileImg from "../../assets/profileimg.svg"
 
 const Alert = () => {
   return (
-    <div>Alert</div>
+    <div className='pt-4'>
+      <div className='flex justify-end space-x-5'>
+        <Image src={NotificationIcon} alt="notify_" />
+        <div>
+          <Image src={ProfileImg} alt="img_" className='w-[32px] h-[32px] rounded-full' />
+        </div>
+      </div>
+    </div>
   )
 }
 
