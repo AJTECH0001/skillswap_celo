@@ -47,12 +47,12 @@ const Workshops = () => {
             <div className="flex mt-4 space-x-4">
               <div>
                 <p className="text-[10px]">Date</p>
-                <p className="text-sm text-[#888888]">{workshop.date}</p>
+                <p className="text-xs text-[#888888]">{workshop.date}</p>
               </div>
 
               <div>
                 <p className="text-[10px]">Time</p>
-                <p className="text-sm text-[#888888]">{workshop.time}</p>
+                <p className="text-xs text-[#888888]">{workshop.time}</p>
               </div>
             </div>
           </div>
