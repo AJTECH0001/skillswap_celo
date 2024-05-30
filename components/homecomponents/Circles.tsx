@@ -69,7 +69,7 @@ const Circles = () => {
                 </div>
               </div>
 
-              <div className="bg-[#EDF4FF] text-center text-[#6A93FF] rounded-b-[8px] font-semibold text-sm py-1 mt-5">
+              <div className="bg-[#EDF4FF] hover:bg-[#6A93FF] text-center text-[#6A93FF] hover:text-white rounded-b-[8px] font-semibold text-sm py-1 mt-5">
                 Join
               </div>
             </div>
