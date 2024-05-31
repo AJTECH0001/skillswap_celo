@@ -36,7 +36,7 @@ const Featured = () => {
   ];
   return (
     <div className="pt-8">
-      <div>
+      <div className="mb-4">
         <p className="text-sm text-[#888888] font-semibold">Featured </p>
       </div>
 
