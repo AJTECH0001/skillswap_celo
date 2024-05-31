@@ -5,6 +5,7 @@ import FeaturedImg1 from "../../assets/featured/featuredimg1.svg";
 import WorkshopImg1 from "../../assets/workshop/workshopimg1.svg";
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const Featured = () => {
   const skills = [
@@ -42,7 +43,7 @@ const Featured = () => {
       <Swiper slidesPerView={"auto"} spaceBetween={10} className="mySwiper">
         {skills.map((skill, index) => (
           <SwiperSlide key={index} className="max-w-[90%]">
-            <div className="bg-[#F8F8F8] rounded-[8px] mt-4 ">
+            <Link href="/skills/skilldetail" className="bg-[#F8F8F8] rounded-[8px] mt-4 ">
               <div>
                 <Image
                   src={skill.image}
@@ -98,7 +99,7 @@ const Featured = () => {
               <div className="bg-[#EDF4FF] hover:bg-[#6A93FF] text-center text-[#6A93FF] hover:text-white rounded-b-[8px] font-semibold text-sm py-1 mt-5">
                 Request Service
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

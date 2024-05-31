@@ -4,7 +4,7 @@ import ProfileImg from "../../assets/alert/profileimg.svg"
 
 const Alert = () => {
   return (
-    <div className='pt-4'>
+    <div className='pt-4  -scroll-mt-96'>
       <div className='flex justify-end space-x-5'>
         <Image src={NotificationIcon} alt="notify_" />
         <div>
