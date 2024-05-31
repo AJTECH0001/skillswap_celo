@@ -1,11 +1,15 @@
 import React from "react";
 
-const Request = () => {
+type Props = {
+  setShowModal: (arg: boolean) => void;
+}
+
+const Request = ({setShowModal}: Props) => {
   return (
     <div>
       <div>
         <div className="pt-8 pb-2">
-          <button className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">
+          <button onClick={() => setShowModal(true)} className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">
             Request Service
           </button>
         </div>
