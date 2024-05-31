@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Filter from "../../assets/filter.svg";
-import SearchIcon from "../../assets/search.svg";
+import Filter from "../../assets/search/filter.svg";
+import SearchIcon from "../../assets/search/search.svg";
 
 const Search = () => {
   return (

@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import SkillImg1 from "../../assets/skills1.svg";
-import SkillImg2 from "../../assets/skills2.svg";
-import SkillImg3 from "../../assets/circlesimg1.svg";
-import Stars from "../../assets/stars.svg";
+import SkillImg1 from "../../assets/skills/skills1.svg";
+import SkillImg2 from "../../assets/skills/skills2.svg";
+import SkillImg3 from "../../assets/circles/circlesimg1.svg";
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";

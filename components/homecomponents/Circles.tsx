@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import CircleImg1 from "../../assets/circlesimg1.svg";
-import CircleImg2 from "../../assets/circlesimg2.svg";
-import CircleImg3 from "../../assets/circlesimg3.svg";
-import CirclePP from "../../assets/circlespp.svg";
-import CircleTime from "../../assets/circlesTime.svg";
+import CircleImg1 from "../../assets/circles/circlesimg1.svg";
+import CircleImg2 from "../../assets/circles/circlesimg2.svg";
+import CirclePP from "../../assets/circles/circlespp.svg";
+import CircleTime from "../../assets/circles/circlesTime.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 

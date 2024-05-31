@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import WorkshopImg1 from "../../assets/workshopimg1.svg";
-import WorkshopImg2 from "../../assets/workshopimg2.svg";
+import WorkshopImg1 from "../../assets/workshop/workshopimg1.svg";
+import WorkshopImg2 from "../../assets/workshop/workshopimg2.svg";
 
 const Workshops = () => {
   const workshops = [

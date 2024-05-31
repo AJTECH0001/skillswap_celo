@@ -1,8 +1,8 @@
 import React from "react";
-import HomeIcon from "../assets/homeicon.svg";
-import SkillsIcon from "../assets/skillsicon.svg";
-import CirclesIcon from "../assets/circlesicon.svg";
-import ProfileIcon from "../assets/profileicon.svg";
+import HomeIcon from "../assets/nav/homeicon.svg";
+import SkillsIcon from "../assets/nav/skillsicon.svg";
+import CirclesIcon from "../assets/nav/circlesicon.svg";
+import ProfileIcon from "../assets/nav/profileicon.svg";
 import Image from "next/image";
 
 const NavBar = () => {

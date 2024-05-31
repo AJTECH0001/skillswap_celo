@@ -1,7 +1,7 @@
 import React from "react";
-import SkillIcon from "../../assets/skill.svg";
-import ExchangeIcon from "../../assets/exchange.svg";
-import WorkshopIcon from "../../assets/workshop.svg";
+import SkillIcon from "../../assets/stats/skill.svg";
+import ExchangeIcon from "../../assets/stats/exchange.svg";
+import WorkshopIcon from "../../assets/stats/workshop.svg";
 import Image from "next/image";
 
 const Stats = () => {

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import NotificationIcon from "../../assets/notification.svg"
-import ProfileImg from "../../assets/profileimg.svg"
+import NotificationIcon from "../../assets/alert/notification.svg"
+import ProfileImg from "../../assets/alert/profileimg.svg"
 
 const Alert = () => {
   return (

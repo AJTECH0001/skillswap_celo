@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import ProfileImg from "../../assets/profileimg.svg";
-import LinkIcon from "../../assets/linkicon.svg";
+import ProfileImg from "../../assets/alert/profileimg.svg";
+import LinkIcon from "../../assets/profile/linkicon.svg";
 import { PlusIcon } from "@heroicons/react/24/solid";
 
 type Props = {

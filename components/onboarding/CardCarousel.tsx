@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Card from "./Card";
-import CardIcon from "../../assets/cardicon.svg"
-import CardIcon1 from "../../assets/cardicon1.svg"
-import CardIcon2 from "../../assets/cardicon2.svg"
+import CardIcon from "../../assets/card/cardicon.svg"
+import CardIcon1 from "../../assets/card/cardicon1.svg"
+import CardIcon2 from "../../assets/card/cardicon2.svg"
 
 interface CardData {
   id: number;
