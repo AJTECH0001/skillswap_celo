@@ -28,9 +28,12 @@ const NavBar = () => {
     <div className="flex justify-center items-center px-3 w-full shadow-2xl h-[80px] bg-white">
       <div className="flex justify-between w-full">
         {navs.map((nav, index) => (
-          <div key={index} className="flex flex-col justify-center items-center">
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center text-[#888888] hover:text-[#6A93FF]"
+          >
             <Image src={nav.icon} alt="nav_icon" />
-            <p className="text-xs mt-2 text-[#888888] hover:text-[#6A93FF]">{nav.title}</p>
+            <p className="text-xs mt-2">{nav.title}</p>
           </div>
         ))}
       </div>
