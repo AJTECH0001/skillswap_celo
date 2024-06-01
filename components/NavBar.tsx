@@ -1,27 +1,42 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import HomeIcon from "../assets/nav/homeicon.svg";
 import SkillsIcon from "../assets/nav/skillsicon.svg";
 import CirclesIcon from "../assets/nav/circlesicon.svg";
 import ProfileIcon from "../assets/nav/profileicon.svg";
+import HomeFilled from "../assets/nav/homefilled.svg";
+import SkillsFilled from "../assets/nav/skillsfilled.svg";
+import CirclesFilled from "../assets/nav/circlesfilled.svg";
+import ProfileFilled from "../assets/nav/profilefilled.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
+  const [active, setActive] = useState("Home");
   const navs = [
     {
       icon: HomeIcon,
+      filledIcon: HomeFilled,
       title: "Home",
+      link: "/home",
     },
     {
       icon: SkillsIcon,
+      filledIcon: SkillsFilled,
       title: "Skills",
+      link: "/skills",
     },
     {
       icon: CirclesIcon,
+      filledIcon: CirclesFilled,
       title: "Circles",
+      link: "/circles",
     },
     {
       icon: ProfileIcon,
+      filledIcon: ProfileFilled,
       title: "Profile",
+      link: "/profile",
     },
   ];
   return (
@@ -30,10 +45,21 @@ const NavBar = () => {
         {navs.map((nav, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center text-[#888888] hover:text-[#6A93FF]"
+            className="flex flex-col justify-center items-center text-[#888888]"
           >
-            <Image src={nav.icon} alt="nav_icon" />
-            <p className="text-xs mt-2">{nav.title}</p>
+            <Link
+              href={nav.link}
+              className={`flex flex-col justify-center items-center cursor-pointer ${
+                nav.title == active ? "text-[#6A93FF]" : "text-[#888888]"
+              }`}
+              onClick={() => setActive(nav.title)}
+            >
+              <Image
+                src={nav.title == active ? nav.filledIcon : nav.icon}
+                alt="nav_icon"
+              />
+              <p className="text-xs mt-2">{nav.title}</p>
+            </Link>
           </div>
         ))}
       </div>
