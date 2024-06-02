@@ -2,6 +2,8 @@ import Image from "next/image";
 import NotificationIcon from "../../assets/alert/notification.svg";
 import ProfileImg from "../../assets/alert/profileimg.svg";
 import { useEffect } from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 
 const Alert = () => {
   useEffect(() => {
@@ -11,9 +13,11 @@ const Alert = () => {
     <div className="pt-4  -scroll-mt-96">
       <div className="flex justify-between space-x-4">
         {/* Connect wallet button */}
-        <button className="bg-[#6A93FF] w-full text-white h-[44px] rounded-[12px]">
-          Connect Wallet
+        <button className=" w-full text-white h-[44px] rounded-[12px]">
+        <ConnectButton/>
         </button>
+
+         
 
         <div className="flex justify-end items-center space-x-5 w-full">
           <Image src={NotificationIcon} alt="notify_" />

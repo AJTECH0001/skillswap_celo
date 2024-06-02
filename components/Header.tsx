@@ -4,18 +4,13 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useConnect } from "wagmi";
-import { injected } from "wagmi/connectors";
+
 
 export default function Header() {
     const [hideConnectBtn, setHideConnectBtn] = useState(false);
     const { connect } = useConnect();
 
-    useEffect(() => {
-        if (window.ethereum && window.ethereum.isMiniPay) {
-            setHideConnectBtn(true);
-            connect({ connector: injected({ target: "metaMask" }) });
-        }
-    }, []);
+  
 
     return (
         <Disclosure as="nav" className="bg-prosperity border-b border-black">
@@ -67,18 +62,7 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 pt-2 pb-4">
-                            <Disclosure.Button
-                                as="a"
-                                href="#"
-                                className="block border-l-4 border-black py-2 pl-3 pr-4 text-base font-medium text-black"
-                            >
-                                Home
-                            </Disclosure.Button>
-                            {/* Add here your custom menu elements */}
-                        </div>
-                    </Disclosure.Panel>
+                  
                 </>
             )}
         </Disclosure>
