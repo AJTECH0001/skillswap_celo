@@ -18,7 +18,7 @@ const NavBar = () => {
       icon: HomeIcon,
       filledIcon: HomeFilled,
       title: "Home",
-      link: "/home",
+      link: "/",
     },
     {
       icon: SkillsIcon,
