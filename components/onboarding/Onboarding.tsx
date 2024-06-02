@@ -11,7 +11,7 @@ type Props = {
 
 const Onboarding = ({ onboarded, setOnboarded }: Props) => {
   const [timePassed, setTimePassed] = useState(false);
-  const [showWallet, setShowWallet] = useState(false);
+  // const [showWallet, setShowWallet] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
 
   setTimeout(function () {
@@ -22,9 +22,9 @@ const Onboarding = ({ onboarded, setOnboarded }: Props) => {
     setOnboarded(true);
   };
 
-  const handleShowWallet = () => {
-    setShowWallet(true);
-  };
+  // const handleShowWallet = () => {
+  //   setShowWallet(true);
+  // };
 
   const handleShowProfile = () => {
     setShowProfile(true);
@@ -34,10 +34,10 @@ const Onboarding = ({ onboarded, setOnboarded }: Props) => {
       {!timePassed && <Splash />}
       {timePassed && (
         <div className="h-auto bg-[#F5F5F5]">
-          {!showWallet && <CardCarousel handleShowWallet={handleShowWallet} />}
-          {showWallet && !showProfile && (
+          {!showProfile && <CardCarousel handleShowProfile={handleShowProfile} />}
+          {/* {showWallet && !showProfile && (
             <WalletCard handleShowProfile={handleShowProfile} />
-          )}
+          )} */}
           {showProfile && <Profile handleSubmit={handleSubmit} />}
         </div>
       )}
