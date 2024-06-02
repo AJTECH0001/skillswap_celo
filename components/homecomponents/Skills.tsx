@@ -42,7 +42,7 @@ const Skills = () => {
       <Swiper slidesPerView={2} spaceBetween={10} className="mySwiper">
         {skills.map((skill, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-[#F8F8F8] rounded-[8px] pb-2 mt-4">
+            <Link href="/skills/skilldetail" className="bg-[#F8F8F8] rounded-[8px] pb-2 mt-4">
               <Image
                 src={skill.image}
                 alt="skillimage_"
@@ -79,7 +79,7 @@ const Skills = () => {
                   })}
                 </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
