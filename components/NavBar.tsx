@@ -40,7 +40,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center px-3 w-full shadow-2xl h-[80px] bg-white">
+    <div className="flex justify-center items-center px-3 max-w-md shadow-2xl h-[80px] bg-white">
       <div className="flex justify-between w-full">
         {navs.map((nav, index) => (
           <div
