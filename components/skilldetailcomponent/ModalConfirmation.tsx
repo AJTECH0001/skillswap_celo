@@ -20,7 +20,7 @@ const ModalConfirmation = () => {
         </button>
 
         <button className="bg-[#6A93FF] w-1/2 text-white h-[44px] rounded-[4px]">
-          <Link href="/home">Back to Home</Link>
+          <Link href="/">Back to Home</Link>
         </button>
       </div>
     </div>
